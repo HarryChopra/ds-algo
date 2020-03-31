@@ -24,3 +24,7 @@ function sumOfArray(arr) {
 	}
 	return arr[0];
 }
+
+console.log(sumOfArrayC([1, 2, 3, 4, 5], 2));
+console.log(sumOfArrayN([1, 2, 3, 4, 5], 2));
+console.log(sumOfArray([1, 2, 3, 4, 5, 5]));

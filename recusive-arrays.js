@@ -6,3 +6,12 @@ function sumOfArrayC(arr, n) {
 	}
 	return 0;
 }
+
+// returns the sum of the elements to n index of an array arr
+
+function sumOfArrayN(arr, n) {
+	while (n > 0) {
+		return arr[n] + sumOfArrayN(arr, n - 1);
+	}
+	return arr[0];
+}

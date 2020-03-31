@@ -15,3 +15,12 @@ function sumOfArrayN(arr, n) {
 	}
 	return arr[0];
 }
+
+// sum of all items in an array
+
+function sumOfArray(arr) {
+	while (arr.length > 1) {
+		return arr.pop() + sumOfArray(arr);
+	}
+	return arr[0];
+}

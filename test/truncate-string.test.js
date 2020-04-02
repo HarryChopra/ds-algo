@@ -1,6 +1,6 @@
 import { truncateString } from '../truncate-string';
 
-describe('', () => {
+describe('Truncate a String', () => {
 	test('truncateString("A-tisket a-tasket A green and yellow basket", 8) should return "A-tisket...".', () => {
 		expect(truncateString('A-tisket a-tasket A green and yellow basket', 8)).toBe(
 			'A-tisket...'

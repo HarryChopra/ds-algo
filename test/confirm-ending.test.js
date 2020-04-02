@@ -35,4 +35,11 @@ describe('Confirm the Ending', () => {
 	test('confirmEnding("Abstraction", "action") should return true', () => {
 		expect(confirmEnding('Abstraction', 'action')).toBe(true);
 	});
+	test('The solution does not use .endsWith() method', () => {
+		String.prototype.endsWith = jest.fn();
+		const mockedInputString = 'testing';
+		const target = 'ing';
+		confirmEnding(mockedInputString, target);
+		expect(mockedInputString.endsWith).toHaveBeenCalledTimes(0);
+	});
 });

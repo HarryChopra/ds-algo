@@ -8,5 +8,3 @@ export const findLongestWordLength = (str) => {
 	}
 	return longest;
 };
-
-findLongestWordLength('The quick brown fox jumped over the lazy dog');
